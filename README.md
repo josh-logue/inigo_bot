@@ -27,3 +27,9 @@ python inigo_safe.py
 ```objc
 python3 inigo_safe.py
 ```
+
+## To-Do
+
+- [ ] Comments
+- [x] Survey invite converted to db
+- [ ] Survey response converted to db
