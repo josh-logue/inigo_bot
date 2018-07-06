@@ -1,3 +1,7 @@
+## to-do
+##  -comments
+##  -survey response converted to db
+
 import discord
 import asyncio
 import sqlite3 as sq
@@ -343,6 +347,7 @@ async def on_message(message):
 
 	
 	# survey/surveyout/surveyw/e all WIP
+	#  -survey response needs to be converted to work with the database
 	elif message.content.startswith('!survey'):
 		officer = False
 		try:
