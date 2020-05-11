@@ -1,6 +1,7 @@
 ## to-do
 ##  -comments
 ##  -survey response converted to db
+##  -add memberlist to db
 
 import discord
 import asyncio
