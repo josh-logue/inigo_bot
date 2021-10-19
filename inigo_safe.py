@@ -27,53 +27,6 @@ async def on_message(message):
 
 		return None
 
-	## The !day1 and !day2 commands are legacy and have been merged into the !day command
-	
-	##	This command is used by guild members to sign up to the first event of the week
-	# if message.content.startswith('!day1'):
-	# 	file = open('day1.txt', 'r')
-	# 	response = message.content.split('!day1')[1]
-	# 	found = False
-	# 	author = message.author
-	# 	for line in file: # will only let the user respond once			
-	# 		if format(author) == format(line.split(None, 1)[0]):
-	# 			found = True
-	# 		if found:
-	# 			break
-	# 	file.close()
-	# 	if not found:
-	# 		file = open('day1.txt', 'a')
-	# 		if response != '':
-	# 			file.write(format(message.author) + ' ' + response.upper() + '\n')
-	# 		else:
-	# 			await client.send_message(message.author, "Empty role, respond again with '!day1 [Character Name] [Role:DPS/HEAL/TANK/UNAVAILABLE]'")
-	# 		file.close()
-	# 	else:
-	# 		await client.send_message(message.author, "Role already sent.")
-		
-
-	# ##  This command is used by guild members to sign up to the second event of the week
-	# elif message.content.startswith('!day2'):
-	# 	file = open('day2.txt', 'r')
-	# 	response = message.content.split('!day2')[1]
-	# 	found = False
-	# 	author = message.author
-	# 	for line in file: # will only let the user respond once
-	# 		if format(author) == format(line.split(None, 1)[0]):
-	# 			found = True
-	# 		if found:
-	# 			break
-	# 	file.close()	
-	# 	if not found:
-	# 		file = open('day2.txt', 'a')	
-	# 		if response != '':
-	# 			file.write(format(message.author) + ' ' + response.upper() + '\n')
-	# 		else:
-	# 			await client.send_message(message.author, "Empty role, respond again with '!day2 [Character Name] [Role:DPS/HEAL/TANK/UNAVAILABLE]'")
-	# 		file.close()
-	# 	else:
-	# 		await client.send_message(message.author, "Role already sent.")
-
 	if message.content.startswith('!day1'):
 		try:
 			con = sq.connect('events.sqlite')
